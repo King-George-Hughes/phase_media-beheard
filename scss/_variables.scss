@@ -1,0 +1,50 @@
+$primary-color: #000;
+$secondary-color: #fff;
+$btnColor: #00abd0;
+$font-family: sans-serif;
+$containerPadding: 20px 20px;
+
+$font-size: clamp(2rem, 1rem + 10vw, 5rem);
+$serach: clamp(2rem, 1rem + 10vw, 5rem);
+$backgroundColor: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.5) 0%,
+  rgba(255, 255, 255, 0.21) 129.17%
+);
+$backgroundColorFooter: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.5) -368.17%,
+  rgba(255, 255, 255, 0.21) -239%
+);
+
+// Fles Center
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+// Flex Start
+@mixin flexStart($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: $direction;
+}
+
+// Flex Space between
+@mixin flexSpaceBetween($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: $direction;
+}
+
+// Flex Space evenly
+@mixin flexSpaceEvenly($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: $direction;
+}

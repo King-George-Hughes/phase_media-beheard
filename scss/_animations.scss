@@ -1,0 +1,65 @@
+@mixin animationStyle($animation) {
+  position: relative;
+  animation-name: $animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@mixin animationStyleDelay($animation) {
+  position: relative;
+  animation-name: $animation;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+// Animations
+// TFrom Top
+@keyframes navigation-bar {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+// Footer
+@keyframes footer-bar {
+  0% {
+    bottom: -200px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+// From Left
+@keyframes content-left {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+// From Right
+@keyframes content-right {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+// Opacity
+@keyframes btnAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
