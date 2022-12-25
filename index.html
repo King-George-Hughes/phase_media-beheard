@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <!-- <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=639a6a4f8fb8b6001abbbe14&product=sticky-share-buttons&source=platform"
@@ -48,7 +49,7 @@
     <!-- Share End -->
 
     <!-- Section 1 Start -->
-    <scetion class="section-1">
+    <section class="section-1">
       <div class="container">
         <p>Trending</p>
         <img src="images/be Heard thumbnail 1.png" alt="" class="hero" />
@@ -68,12 +69,12 @@
           <h4>Projects</h4>
         </div>
       </div>
-    </scetion>
+    </section>
     <!-- Section 1 Ends -->
 
     <!-- Section 2 Start -->
     <section class="section-2">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="events">
           <img src="images/Do right by me.png" width="100%" alt="" />
           <!-- <div class="swiper mySwiper">
@@ -101,7 +102,7 @@
 
     <!-- Section 3 Start -->
     <section class="section-3">
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="group-2">
           <h2>Bring your business to life</h2>
           <h4>Advertising</h4>
@@ -122,7 +123,7 @@
 
     <!-- Section 4 Start -->
     <section class="section-4">
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="group-2">
           <h2>Let's help you finish that project!</h2>
           <h4>Rentals</h4>
@@ -185,7 +186,7 @@
 
     <!-- Footer Start -->
     <footer class="footer">
-      <div class="container">
+      <div class="container" data-aos="flip-up">
         <h5>FOLLOW US</h5>
         <div class="social">
           <a href="#"><img src="images/facebook.png" alt="" /></a>
@@ -217,6 +218,8 @@
 
     <script src="js/all.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+
     <script>
       // var swiper = new Swiper(".mySwiper", {
       //   effect: "cards",
@@ -231,6 +234,11 @@
           el: ".swiper-pagination",
           type: "fraction",
         },
+      });
+
+      AOS.init({
+        duration: 3000,
+        once: true,
       });
     </script>
   </body>

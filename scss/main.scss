@@ -303,7 +303,7 @@
   .container {
     padding: $containerPadding;
     @include flexCenter(column);
-    @include animationStyle(footer-bar);
+    // @include animationStyle(footer-bar);
 
     h5 {
       // font-family: "Poppins";

@@ -398,13 +398,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  -webkit-animation-name: footer-bar;
-          animation-name: footer-bar;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 .footer .container h5 {
   color: #e4e3e3;
