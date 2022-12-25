@@ -77,6 +77,12 @@
 
 // Section 1
 .section-1 {
+  .hero {
+    width: 100%;
+    padding: 0 10px;
+    align-self: center;
+    @include animationStyle(content-right);
+  }
   .container {
     width: 100%;
     padding: $containerPadding;
@@ -91,13 +97,6 @@
       text-align: center;
       margin: 10px 0;
       @include animationStyleDelay(content-right);
-    }
-
-    .hero {
-      width: 100%;
-      padding: 0 10px;
-      align-self: center;
-      @include animationStyle(content-right);
     }
 
     .group-2 {
